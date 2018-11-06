@@ -1,0 +1,20 @@
+{
+  "OCaml": {
+    "add_identifier_chars": "'"
+  },
+  "Common Lisp": {
+    "add_identifier_chars": "-*"
+  },
+  "Emacs Lisp": {
+    "add_identifier_chars": "-*"
+  },
+  "Scheme": {
+    "add_identifier_chars": "-*"
+  },
+  "TOML": {
+    "add_identifier_chars": "-"
+  },
+  "TeX": {
+    "remove_identifier_chars": "_"
+  },
+}
