@@ -20,6 +20,13 @@ If your feature request is specific to a particular editor's TabNine client, ple
 
 If new features don't work for you, check that you have the most recent version by typing `TabNine::version` into your text editor. If you don't have the most recent version, try restarting your editor.
 
+## 1.0.9 (November 27, 2018)
+
+- TabNine now uses the context after the cursor to filter its suggestions. For example, if there are tokens on the same line as the cursor, TabNine will not make a suggestion ending in a semicolon (unless there are already instances in the codebase of semicolons occurring in the middle of a line).
+- TabNine removes tokens matching the regex `\d.*[a-zA-Z].*\d.*[a-zA-Z]` from the project index. This is supposed to prevent long keys or base64 literals from occurring in autocompletion suggestions. The tokens are **not** filtered from the directory index or the file index.
+- TabNine now recognizes `.tsx` files as TypeScript rather than `.xml` (closes [#21](https://github.com/zxqfl/TabNine/issues/21)).
+- TabNine only checks its version directory, not its target directory, when auto-updating or writing registration keys. (This fixes an issue associated with DOS path shortening.)
+
 ## 1.0.7 (November 20, 2018)
 
 - Semantic completion is added! This allows TabNine to integrate with any language server that implements the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/).
