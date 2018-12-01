@@ -20,6 +20,11 @@ If your feature request is specific to a particular editor's TabNine client, ple
 
 If new features don't work for you, check that you have the most recent version by typing `TabNine::version` into your text editor. If you don't have the most recent version, try restarting your editor.
 
+## 1.0.10 (December 1, 2018)
+- Fixed an internal logic error which could put indexing threads into a bad state, leading to an infinite loop (might close [#24](https://github.com/zxqfl/TabNine/issues/24), we'll see).
+- TabNine now considers a wider range of possibilities when completing in a zero-char context (i.e. when there are no characters immediately before the cursor).
+- TabNine now includes `-` in identifiers when parsing Racket code.
+
 ## 1.0.9 (November 27, 2018)
 
 - TabNine now uses the context after the cursor to filter its suggestions. For example, if there are tokens on the same line as the cursor, TabNine will not make a suggestion ending in a semicolon (unless there are already instances in the codebase of semicolons occurring in the middle of a line).
