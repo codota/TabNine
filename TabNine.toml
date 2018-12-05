@@ -50,3 +50,13 @@ install = [["pub", "global", "activate", "dart_language_server"]]
 command = "solargraph"
 args = ["stdio"]
 install = [["gem", "install", "solargraph"]]
+
+[language.css]
+command = "css-languageserver"
+args = ["--stdio"]
+install = [["npm", "install", "-g", "vscode-css-languageserver-bin"]]
+
+[language.scss]
+command = "css-languageserver"
+args = ["--stdio"]
+install = [["npm", "install", "-g", "vscode-css-languageserver-bin"]]
