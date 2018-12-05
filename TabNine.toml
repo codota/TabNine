@@ -10,6 +10,11 @@ command = "flow"
 args = ["lsp"]
 install = [["npm", "install", "-g", "flow-bin"]]
 
+[language.typescript]
+command = "typescript-language-server"
+args = ["--stdio"]
+install = [["npm", "install", "-g", "typescript-language-server"]]
+
 [language.html]
 command = "html-languageserver"
 args = ["--stdio"]
