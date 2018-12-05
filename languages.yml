@@ -1826,7 +1826,6 @@ Haml:
   language_id: 154
 Handlebars:
   type: markup
-  group: HTML
   aliases:
   - hbs
   - htmlbars
@@ -3566,7 +3565,6 @@ Public Key:
   codemirror_mime_type: application/pgp
   language_id: 298
 Pug:
-  group: HTML
   type: markup
   extensions:
   - ".jade"

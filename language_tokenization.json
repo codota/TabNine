@@ -1,6 +1,7 @@
 {
   "OCaml": {
-    "add_identifier_chars": "'"
+    "add_identifier_chars": "'",
+    "lsp_id": "ocaml"
   },
   "Common Lisp": {
     "add_identifier_chars": "-*"
@@ -11,10 +12,49 @@
   "Scheme": {
     "add_identifier_chars": "-*"
   },
+  "Racket": {
+    "add_identifier_chars": "-*"
+  },
   "TOML": {
     "add_identifier_chars": "-"
   },
   "TeX": {
-    "remove_identifier_chars": "_"
+    "remove_identifier_chars": "_",
+    "lsp_id": "tex" 
   },
+  "Clojure": { "lsp_id": "clojure" },
+  "CoffeeScript":  { "lsp_id": "coffeescript" },
+  "C/C++": { "lsp_id": "cpp" },
+  "C#":  { "lsp_id": "csharp" },
+  "CSS": { "lsp_id": "css" },
+  "Diff":  { "lsp_id": "diff" },
+  "Dockerfile":  { "lsp_id": "dockerfile" },
+  "F#":  { "lsp_id": "fsharp" },
+  "Go":  { "lsp_id": "go" },
+  "Groovy":  { "lsp_id": "groovy" },
+  "Handlebars":  { "lsp_id": "handlebars" },
+  "HTML":  { "lsp_id": "html" },
+  "Java":  { "lsp_id": "java" },
+  "JavaScript":  { "lsp_id": "javascript" },
+  "JSON":  { "lsp_id": "json" },
+  "Lua": { "lsp_id": "lua" },
+  "Makefile":  { "lsp_id": "makefile" },
+  "Markdown":  { "lsp_id": "markdown" },
+  "Objective-C": { "lsp_id": "objective-c" },
+  "Objective-C++": { "lsp_id": "objective-cpp" },
+  "Perl":  { "lsp_id": "perl6" },
+  "PHP": { "lsp_id": "php" },
+  "PowerShell":  { "lsp_id": "powershell" },
+  "Pug": { "lsp_id": "jade" },
+  "Python":  { "lsp_id": "python" },
+  "R": { "lsp_id": "r" },
+  "Ruby":  { "lsp_id": "ruby" },
+  "Rust":  { "lsp_id": "rust" },
+  "ShaderLab": { "lsp_id": "shaderlab" },
+  "SQL": { "lsp_id": "sql" },
+  "Swift": { "lsp_id": "swift" },
+  "TypeScript":  { "lsp_id": "typescript" },
+  "Visual Basic":  { "lsp_id": "vb" },
+  "XSLT": { "lsp_id": "xsl" },
+  "YAML":  { "lsp_id": "yaml" }
 }
