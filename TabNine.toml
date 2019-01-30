@@ -2,7 +2,7 @@
 command = "rls"
 install = [
   ["rustup", "update"],
-  ["rustup", "component", "add", "rls-preview", "rust-analysis", "rust-src"],
+  ["rustup", "component", "add", "rls", "rust-analysis", "rust-src"],
 ]
 
 [language.javascript]
