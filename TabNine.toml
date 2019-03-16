@@ -38,9 +38,9 @@ command = "hie"
 args = ["--lsp"]
 
 [language.go]
-command = "go-langserver"
-args = ["-mode", "stdio", "-gocodecompletion"]
-install = [["go", "get", "-u", "github.com/sourcegraph/go-langserver"]]
+command = "gopls"
+args = ["serve"]
+install = [["go", "get", "-u", "golang.org/x/tools/cmd/gopls"]]
 
 [language.dart]
 command = "dart_language_server"
