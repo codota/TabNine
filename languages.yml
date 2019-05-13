@@ -924,16 +924,6 @@ Cython:
   codemirror_mode: python
   codemirror_mime_type: text/x-cython
   language_id: 79
-D:
-  type: programming
-  color: "#ba595e"
-  extensions:
-  - ".d"
-  - ".di"
-  ace_mode: d
-  codemirror_mode: d
-  codemirror_mime_type: text/x-d
-  language_id: 80
 D-ObjDump:
   type: data
   extensions:
@@ -5392,3 +5382,13 @@ Reason:
   - ocaml
   tm_scope: source.reason
   language_id: 869538413
+D:
+  type: programming
+  color: "#ba595e"
+  extensions:
+  - ".d"
+  - ".di"
+  ace_mode: d
+  codemirror_mode: d
+  codemirror_mime_type: text/x-d
+  language_id: 80
