@@ -60,3 +60,8 @@ install = [["npm", "install", "-g", "vscode-css-languageserver-bin"]]
 command = "css-languageserver"
 args = ["--stdio"]
 install = [["npm", "install", "-g", "vscode-css-languageserver-bin"]]
+
+[language.purescript]
+command = "purescript-language-server"
+args = ["--stdio"]
+install = [["npm", "install", "-g", "purescript-language-server"]]
