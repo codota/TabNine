@@ -21,7 +21,7 @@ If your feature request is specific to a particular editor's TabNine client, ple
 
 If new features don't work for you, check that you have the most recent version by typing `TabNine::version` into your text editor. If you don't have the most recent version, try restarting your editor.
 
-## 1.0.14 (May 16, 2018)
+## 1.0.14 (May 16, 2019)
 - TabNine no longer watches for filesystem events in ignored directories (closes [#43](https://github.com/zxqfl/TabNine/issues/43)).
 - TabNine now waits until a completion is requested to start the language server (closes [#50](https://github.com/zxqfl/TabNine/issues/50)).
 - Files with the `.d` extension are now recognized as D source files (closes [#56](https://github.com/zxqfl/TabNine/issues/56)).
