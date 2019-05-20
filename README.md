@@ -15,7 +15,11 @@ If your feature request is specific to a particular editor's TabNine client, ple
 - [Sublime Text](https://github.com/zxqfl/tabnine-sublime)
 - [Vim](https://github.com/zxqfl/tabnine-vim)
 - [Atom](https://github.com/zxqfl/tabnine-atom)
+
+You may be interested in these TabNine clients written by third parties:
+
 - [Emacs](https://github.com/TommyX12/company-tabnine)
+- [Vim (Deoplete)](https://github.com/tbodt/deoplete-tabnine)
 
 # Changelogs
 
