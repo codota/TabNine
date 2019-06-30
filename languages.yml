@@ -3331,33 +3331,6 @@ Pep8:
   ace_mode: text
   tm_scope: source.pep8
   language_id: 840372442
-Perl:
-  type: programming
-  tm_scope: source.perl
-  ace_mode: perl
-  codemirror_mode: perl
-  codemirror_mime_type: text/x-perl
-  color: "#0298c3"
-  extensions:
-  - ".pl"
-  - ".al"
-  - ".cgi"
-  - ".fcgi"
-  - ".perl"
-  - ".ph"
-  - ".plx"
-  - ".pm"
-  - ".psgi"
-  - ".t"
-  filenames:
-  - ack
-  - cpanfile
-  interpreters:
-  - cperl
-  - perl
-  aliases:
-  - cperl
-  language_id: 282
 Perl 6:
   type: programming
   color: "#0000fb"
@@ -5392,3 +5365,30 @@ D:
   codemirror_mode: d
   codemirror_mime_type: text/x-d
   language_id: 80
+Perl:
+  type: programming
+  tm_scope: source.perl
+  ace_mode: perl
+  codemirror_mode: perl
+  codemirror_mime_type: text/x-perl
+  color: "#0298c3"
+  extensions:
+  - ".pl"
+  - ".al"
+  - ".cgi"
+  - ".fcgi"
+  - ".perl"
+  - ".ph"
+  - ".plx"
+  - ".pm"
+  - ".psgi"
+  - ".t"
+  filenames:
+  - ack
+  - cpanfile
+  interpreters:
+  - cperl
+  - perl
+  aliases:
+  - cperl
+  language_id: 282
