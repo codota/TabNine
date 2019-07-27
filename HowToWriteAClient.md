@@ -136,6 +136,25 @@ The Language Server Protocol also specifies the meanings of `kind`, `detail`, `d
 
 The behavior of autocompletion is as follows: when the user selects the result, the text before the cursor should be `old_prefix`, and it should be replaced by `new_prefix`. The text after the cursor should be `old_suffix`, and it should be replaced by `new_suffix`.
 
+For example, suppose the current state of the editor is as follows (where \| represents the cursor):
+
+```
+if (x == |)
+```
+
+Suppose TabNine wants to suggest `if (x == 0) {`. Then the fields will be as follows:
+- `old_prefix = ""`
+- `new_prefix = "0) {"`
+- `old_suffix = ")"` (we need to delete the closing bracket after the cursor because it's already included in `new_prefix`)
+- `new_suffix = "}"` (inserting a matching closing bracket for the `{`)
+
+After the completion is accepted, the editor will look like this:
+```
+if (x == 0) {|}
+```
+
+The responses to the other queries are:
+
 ```
 PrefetchResponse = null
 ```
