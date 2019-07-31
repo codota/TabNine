@@ -248,15 +248,6 @@ ApacheConf:
   tm_scope: source.apache-config
   ace_mode: apache_conf
   language_id: 16
-Apex:
-  type: programming
-  extensions:
-  - ".cls"
-  tm_scope: source.java
-  ace_mode: java
-  codemirror_mode: clike
-  codemirror_mime_type: text/x-java
-  language_id: 17
 Apollo Guidance Computer:
   type: programming
   group: Assembly
@@ -5392,3 +5383,12 @@ Perl:
   aliases:
   - cperl
   language_id: 282
+Apex:
+  type: programming
+  extensions:
+  - ".cls"
+  tm_scope: source.java
+  ace_mode: java
+  codemirror_mode: clike
+  codemirror_mime_type: text/x-java
+  language_id: 17
