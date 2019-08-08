@@ -4,16 +4,20 @@
     "lsp_id": "ocaml"
   },
   "Common Lisp": {
-    "add_identifier_chars": "-*"
+    "add_identifier_chars": "-*",
+    "disable_pairing_for": ["'"]
   },
   "Emacs Lisp": {
-    "add_identifier_chars": "-*"
+    "add_identifier_chars": "-*",
+    "disable_pairing_for": ["'"]
   },
   "Scheme": {
-    "add_identifier_chars": "-*"
+    "add_identifier_chars": "-*",
+    "disable_pairing_for": ["'"]
   },
   "Racket": {
-    "add_identifier_chars": "-*"
+    "add_identifier_chars": "-*",
+    "disable_pairing_for": ["'"]
   },
   "TOML": {
     "add_identifier_chars": "-"
@@ -49,7 +53,10 @@
   "Python":  { "lsp_id": "python" },
   "R": { "lsp_id": "r" },
   "Ruby":  { "lsp_id": "ruby" },
-  "Rust":  { "lsp_id": "rust" },
+  "Rust":  {
+    "lsp_id": "rust",
+    "disable_pairing_for": ["'"]
+  },
   "ShaderLab": { "lsp_id": "shaderlab" },
   "SQL": { "lsp_id": "sql" },
   "Swift": { "lsp_id": "swift" },
