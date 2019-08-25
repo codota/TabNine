@@ -25,6 +25,19 @@ You may be interested in these TabNine clients written by third parties:
 
 If new features don't work for you, check that you have the most recent version by typing `TabNine::version` into your text editor. If you don't have the most recent version, try restarting your editor.
 
+## 2.0.11 (August 24, 2019)
+
+- [TabNine Local](https://tabnine.com/blog/local) is now enabled by default
+
+## 2.0.0 — 2.0.10 (July 15 — August 20, 2019)
+
+- [Deep TabNine](https://tabnine.com/blog/deep)
+  - Can download and run [TabNine Local](https://tabnine.com/blog/local) models
+  - Can connect to [TabNine Cloud](https://tabnine.com/subscribe#cloud)
+- Simplified bracket pairing logic
+- Simplified filesystem event handling
+- Added a configuration panel for viewing settings and logs which can be accessed by typing `TabNine::config`
+
 ## 1.0.14 (May 16, 2019)
 - TabNine no longer watches for filesystem events in ignored directories (closes [#43](https://github.com/zxqfl/TabNine/issues/43)).
 - TabNine now waits until a completion is requested to start the language server (closes [#50](https://github.com/zxqfl/TabNine/issues/50)).
