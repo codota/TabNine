@@ -29,9 +29,13 @@ install = [["npm", "install", "-g", "ocaml-language-server"]]
 command = "pyls"
 install = [["pip", "install", "python-language-server"]]
 
+[language.c]
+command = "clangd"
+args = []
+
 [language.cpp]
-command = "cquery"
-args = ["--init={\"cacheDirectory\": \"${project_root}/.cquery_cache\"}"]
+command = "clangd"
+args = []
 
 [language.haskell]
 command = "hie"
