@@ -25,7 +25,12 @@ You may be interested in these TabNine clients written by third parties:
 
 If new features don't work for you, check that you have the most recent version by typing `TabNine::version` into your text editor. If you don't have the most recent version, try restarting your editor.
 
-## 2.0.11 (August 24, 2019)
+## 2.2.0 (January 8, 2020)
+
+- Switch from self signed certificate to Let's Encrypt
+- Fix LSP configuration for GoLang and Clang
+
+## 2.1.0 (August 24, 2019)
 
 - [TabNine Local](https://tabnine.com/blog/local) is now enabled by default
 
