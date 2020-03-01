@@ -25,7 +25,11 @@ You may be interested in these TabNine clients written by third parties:
 
 If new features don't work for you, check that you have the most recent version by typing `TabNine::version` into your text editor. If you don't have the most recent version, try restarting your editor.
 
-## 2.2.0 (January 8, 2020)
+## 2.3.0 - 2.3.5 (Febuary 10, 2020)
+
+- Preventing excessive CPU and memory consumption
+
+## 2.2.0 - 2.2.2 (January 8, 2020)
 
 - Switch from self signed certificate to Let's Encrypt
 - Fix LSP configuration for GoLang and Clang
