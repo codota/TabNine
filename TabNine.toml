@@ -65,6 +65,11 @@ command = "css-languageserver"
 args = ["--stdio"]
 install = [["npm", "install", "-g", "vscode-css-languageserver-bin"]]
 
+[language.viml]
+command = "vim-language-server"
+args = ["--stdio"]
+install = [["npm", "install", "-g", "vim-language-server"]]
+
 [language.purescript]
 command = "purescript-language-server"
 args = ["--stdio"]
