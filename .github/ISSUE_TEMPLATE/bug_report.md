@@ -8,7 +8,8 @@ assignees: ''
 ---
 
 **please complete the following information:**
- - OS: [e.g. Win 10, Mac Catalina]
- - IDE: [e.g. vscode, intelij, sublime]
+ - OS version: [e.g. Win 10, Mac Catalina]
+ - Editor: [e.g. vscode, intelij, sublime]
+ - Editor version:
  - Programming language: [e.g. js, ts, c++]
- - TabNine extension version: [e.g. 2.8.2]
+ - TabNine extension version:
