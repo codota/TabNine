@@ -6,9 +6,9 @@ install = [
 ]
 
 [language.javascript]
-command = "flow"
-args = ["lsp"]
-install = [["npm", "install", "-g", "flow-bin"]]
+command = "typescript-language-server"
+args = ["--stdio"]
+install = [["npm", "install", "-g", "typescript-language-server"]]
 
 [language.typescript]
 command = "typescript-language-server"
