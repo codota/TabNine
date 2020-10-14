@@ -16,10 +16,13 @@ If your feature request is specific to a particular editor's TabNine client, ple
 - [Vim](https://github.com/zxqfl/tabnine-vim)
 - [Atom](https://github.com/zxqfl/tabnine-atom)
 
-You may be interested in these TabNine clients written by third parties:
+You may be interested in these TabNine clients written by **third parties**:
 
+> **_NOTE:_** Codota is **not** validating any code in those plugins and is not responsible for them by any means.
 - [Emacs](https://github.com/TommyX12/company-tabnine)
 - [Vim (Deoplete)](https://github.com/tbodt/deoplete-tabnine)
+- [Eclipse](https://github.com/GitPopcorn/tabnine-eclipse)
+- Your client https://github.com/codota/TabNine/blob/master/HowToWriteAClient.md
 
 # Changelogs
 
