@@ -40,7 +40,9 @@ When TabNine updates, it downloads the new version in the same location as the c
 
 Once TabNine downloads an update, it terminates. You should restart TabNine when it terminates, up to some maximum number of restarts (say, 10).
 
-To start TabNine, list the `binaries` directory and choose the most recent version. Here is Python code from the Sublime Text client which does this:
+In recent versions, TabNine also creates a `.active` file in parallel to the version folders. This file contains the version the plugin should run.
+
+To start TabNine, read the `.active` file content and run the binary under that version. If no such file exists, list the `binaries` directory and choose the most recent version. Here is Python code from the Sublime Text client which does this:
 ```python
 def parse_semver(s):
     try:
@@ -49,22 +51,42 @@ def parse_semver(s):
         return []
 
 def get_tabnine_path(binary_dir):
+    def join_path(*args):
+        return os.path.join(binary_dir, *args)
+
     translation = {
-        ("linux",   "x32"): "i686-unknown-linux-gnu/TabNine",
-        ("linux",   "x64"): "x86_64-unknown-linux-gnu/TabNine",
-        ("osx",     "x32"): "i686-apple-darwin/TabNine",
-        ("osx",     "x64"): "x86_64-apple-darwin/TabNine",
+        ("linux", "x32"): "i686-unknown-linux-musl/TabNine",
+        ("linux", "x64"): "x86_64-unknown-linux-musl/TabNine",
+        ("osx", "x32"): "i686-apple-darwin/TabNine",
+        ("osx", "x64"): "x86_64-apple-darwin/TabNine",
         ("windows", "x32"): "i686-pc-windows-gnu/TabNine.exe",
         ("windows", "x64"): "x86_64-pc-windows-gnu/TabNine.exe",
     }
-    versions = os.listdir(binary_dir)
-    versions.sort(key=parse_semver, reverse=True)
+
+    platform_key = sublime.platform(), sublime.arch()
+    platform = translation[platform_key]
+
+    versions = []
+
+    # if a .active file exists and points to an existing binary than use it
+    active_path = join_path(binary_dir, ".active")
+    if os.path.exists(active_path):
+        version = open(active_path).read().strip()
+        version_path = join_path(binary_dir, version)
+        active_tabnine_path = join_path(version_path, platform)
+        if os.path.exists(active_tabnine_path):
+            versions = [version_path]
+
+    # if no .active file then fallback to taking the latest
+    if len(versions) == 0:
+        versions = os.listdir(binary_dir)
+        versions.sort(key=parse_semver, reverse=True)
+
     for version in versions:
-        key = sublime.platform(), sublime.arch()
-        path = os.path.join(binary_dir, version, translation[key])
+        path = join_path(version, platform)
         if os.path.isfile(path):
             add_execute_permission(path)
-            print("TabNine: starting version", version)
+            print("Tabnine: starting version", version)
             return path
 ```
 
