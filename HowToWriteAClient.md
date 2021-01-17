@@ -42,13 +42,19 @@ Once TabNine downloads an update, it terminates. You should restart TabNine when
 
 In recent versions, TabNine also creates a `.active` file in parallel to the version folders. This file contains the version the plugin should run.
 
-To start TabNine, read the `.active` file content and run the binary under that version. If no such file exists, list the `binaries` directory and choose the most recent version. Here is Python code from the Sublime Text client which does this:
+To start TabNine, read the `.active` file content and run the binary under that version. If no such file exists, list the `binaries` directory and choose the most recent version. Here is Python code similar to the Sublime Text client which does this:
 ```python
 def parse_semver(s):
     try:
         return [int(x) for x in s.split('.')]
     except ValueError:
         return []
+
+def get_arch():
+    if is_apple_m1():
+        return "arm64"
+
+    return sublime.arch()
 
 def get_tabnine_path(binary_dir):
     def join_path(*args):
@@ -57,13 +63,13 @@ def get_tabnine_path(binary_dir):
     translation = {
         ("linux", "x32"): "i686-unknown-linux-musl/TabNine",
         ("linux", "x64"): "x86_64-unknown-linux-musl/TabNine",
-        ("osx", "x32"): "i686-apple-darwin/TabNine",
         ("osx", "x64"): "x86_64-apple-darwin/TabNine",
+        ("osx", "arm64"): "aarch64-apple-darwin/TabNine",
         ("windows", "x32"): "i686-pc-windows-gnu/TabNine.exe",
         ("windows", "x64"): "x86_64-pc-windows-gnu/TabNine.exe",
     }
 
-    platform_key = sublime.platform(), sublime.arch()
+    platform_key = sublime.platform(), get_arch()
     platform = translation[platform_key]
 
     versions = []
@@ -88,6 +94,25 @@ def get_tabnine_path(binary_dir):
             add_execute_permission(path)
             print("Tabnine: starting version", version)
             return path
+```
+
+# About Apple M1 processor support
+
+As of late 2020, apple released their new M1 processors, based on the arm64 architecture. When running on this platform, 
+it is advised to run the aarch64-apple-darwin binary. Running the x86_64 binary will work, using 
+[the Rosetta translation environment](https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment).
+However, Tabnine will not be able to download and load the local deep model, because it relies on some intel specific cpu intrinsics (FMA, AVX2)
+that do not exist when running under Rosetta.
+
+Some editors already have native support for arm64, while others rely on rosetta to function. Either way, it is highly 
+recommended to run the aarch64 binary on m1 platforms. It can get a little tricky correctly detecting being on m1 when 
+running under rosetta. It usually requires calling some form of `uname` or similar. Here's how we do it in sublime:
+
+```python
+import platofrm
+if sublime.platform() == "osx":
+    if "ARM64" in platform.version().upper():
+        return "arm64"
 ```
 
 # API Specification
