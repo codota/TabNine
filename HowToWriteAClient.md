@@ -96,6 +96,25 @@ def get_tabnine_path(binary_dir):
             return path
 ```
 
+# About Apple M1 processor support
+
+As of late 2020, apple released their new M1 processors, based on the arm64 architecture. When running on this platform, 
+it is advised to run the aarch64-apple-darwin binary. Running the x86_64 binary will work, using 
+[the Rosetta translation environment](https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment).
+However, Tabnine will not be able to download and load the local deep model, because it relies on some intel specific cpu intrinsics (FMA, AVX2)
+that do not exist when running under Rosetta.
+
+Some editors already have native support for arm64, while others rely on rosetta to function. Either way, it is highly 
+recommended to run the aarch64 binary on m1 platforms. It can get a little tricky correctly detecting being on m1 when 
+running under rosetta. It usually requires calling some form of `uname` or similar. Here's how we do it in sublime:
+
+```python
+import platofrm
+if sublime.platform() == "osx":
+    if "ARM64" in platform.version().upper():
+        return "arm64"
+```
+
 # API Specification
 
 Each request to TabNine must be a JSON object followed by a newline. The JSON object must be a dictionary containing the fields `version` and `request`. `version` should be a string corresponding to a TabNine version. The field `request` must be a dictionary with a single key. The key must be one of the following:
