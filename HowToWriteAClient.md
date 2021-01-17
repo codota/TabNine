@@ -69,7 +69,7 @@ def get_tabnine_path(binary_dir):
         ("windows", "x64"): "x86_64-pc-windows-gnu/TabNine.exe",
     }
 
-    platform_key = sublime.platform(), sublime.arch()
+    platform_key = sublime.platform(), get_arch()
     platform = translation[platform_key]
 
     versions = []
