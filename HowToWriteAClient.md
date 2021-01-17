@@ -42,13 +42,19 @@ Once TabNine downloads an update, it terminates. You should restart TabNine when
 
 In recent versions, TabNine also creates a `.active` file in parallel to the version folders. This file contains the version the plugin should run.
 
-To start TabNine, read the `.active` file content and run the binary under that version. If no such file exists, list the `binaries` directory and choose the most recent version. Here is Python code from the Sublime Text client which does this:
+To start TabNine, read the `.active` file content and run the binary under that version. If no such file exists, list the `binaries` directory and choose the most recent version. Here is Python code similar to the Sublime Text client which does this:
 ```python
 def parse_semver(s):
     try:
         return [int(x) for x in s.split('.')]
     except ValueError:
         return []
+
+def get_arch():
+    if is_apple_m1():
+        return "arm64"
+
+    return sublime.arch()
 
 def get_tabnine_path(binary_dir):
     def join_path(*args):
@@ -57,8 +63,8 @@ def get_tabnine_path(binary_dir):
     translation = {
         ("linux", "x32"): "i686-unknown-linux-musl/TabNine",
         ("linux", "x64"): "x86_64-unknown-linux-musl/TabNine",
-        ("osx", "x32"): "i686-apple-darwin/TabNine",
         ("osx", "x64"): "x86_64-apple-darwin/TabNine",
+        ("osx", "arm64"): "aarch64-apple-darwin/TabNine",
         ("windows", "x32"): "i686-pc-windows-gnu/TabNine.exe",
         ("windows", "x64"): "x86_64-pc-windows-gnu/TabNine.exe",
     }
