@@ -115,6 +115,8 @@ if sublime.platform() == "osx":
         return "arm64"
 ```
 
+Even running uname on rosetta [can get a little tricky](https://github.com/codota/TabNine/issues/326), so test it well.
+
 # API Specification
 
 Each request to TabNine must be a JSON object followed by a newline. The JSON object must be a dictionary containing the fields `version` and `request`. `version` should be a string corresponding to a TabNine version. The field `request` must be a dictionary with a single key. The key must be one of the following:
