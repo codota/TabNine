@@ -1,0 +1,19 @@
+{
+  "version": "3.3.48",
+  "notes": [
+    {
+      "title": "Reduced RAM footprint by using a single shared process",
+      "resource": "https://www.tabnine.com/blog/shared-process",
+      "type": "feature",
+      "reference": ""
+    },
+    {
+      "title": "Mac users? We've added native support for Apple Silicon (M1)",
+      "resource": "https://www.tabnine.com/blog/apple-silicon-support",
+      "type": "feature",
+      "reference": ""
+    }
+  ]
+}
+
+
