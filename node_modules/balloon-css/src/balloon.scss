@@ -1,0 +1,223 @@
+//
+// Variables
+// -----------------------------------------
+
+@import "./variables";
+
+//
+// Mixins
+// -----------------------------------------
+
+@import "./mixins";
+
+
+//
+// Styles
+// -----------------------------------------
+
+:root {
+  --balloon-border-radius: 2px;
+  --balloon-color: #{$balloon-bg};
+  --balloon-text-color: #{$balloon-text-color};
+  --balloon-font-size: #{$balloon-base-size};
+  --balloon-move: #{$balloon-move};
+}
+
+// IE 11 button bugfix
+button[aria-label] {
+  &[data-balloon-pos] {
+    overflow: visible;
+  }
+}
+
+[aria-label] {
+  &[data-balloon-pos] {
+    position: relative; // alt. absolute or fixed
+
+    // Fixing iOS Safari event issue.
+    // More info at: https://goo.gl/w8JF4W
+    cursor: pointer;
+
+    &:after {
+      @include base-effects();
+      @include normalized-text();
+
+      background: var(--balloon-color);
+      border-radius: 2px;
+      color: var(--balloon-text-color);
+      border-radius: var(--balloon-border-radius);
+      content: attr(aria-label);
+      padding: .5em 1em;
+      position: absolute;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    &:before {
+      @include arrow(down);
+      @include base-effects();
+
+      content: "";
+      position: absolute;
+      z-index: 10;
+    }
+
+    &:hover, &[data-balloon-visible], &:not([data-balloon-nofocus]):focus {
+      &:before,
+      &:after {
+        opacity: 1;
+        pointer-events: none;
+      }
+    }
+
+    &.font-awesome:after {
+      font-family: FontAwesome, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    &[data-balloon-break] {
+      &:after {
+        white-space: pre;
+      }
+
+      &[data-balloon-length] {
+        &:after {
+          white-space: pre-line;
+          word-break: break-word;
+        }
+      }
+    }
+
+    &[data-balloon-blunt] {
+      &:before,
+      &:after {
+        @include no-effects();
+      }
+    }
+
+    &[data-balloon-pos="up"],
+    &[data-balloon-pos="down"] {
+      &:hover, &[data-balloon-visible] {
+        &:after { transform: translate(-50%, 0); }
+        &:before { transform: translate(-50%, 0); }
+      }
+    }
+
+    &[data-balloon-pos*="-left"] {
+      &:after { left: 0; }
+      &:before { left: 5px; }
+    }
+
+    &[data-balloon-pos*="-right"] {
+      &:after { right: 0; }
+      &:before { right: 5px; }
+    }
+
+    &[data-balloon-po*="-left"],
+    &[data-balloon-pos*="-right"] {
+      &:hover, &[data-balloon-visible] {
+        &:after { transform: translate(0, 0); }
+        &:before { transform: translate(0, 0); }
+      }
+    }
+
+    &[data-balloon-pos^="up"] {
+      &:before,
+      &:after {
+        bottom: 100%;
+        transform-origin: top;
+        transform: translate(0, var(--balloon-move));
+      }
+
+      &:after { margin-bottom: $balloon-arrow-size + 5px; }
+    }
+
+    &[data-balloon-pos="up"] {
+      &:before,
+      &:after {
+        left: 50%;
+        transform: translate(-50%, var(--balloon-move));
+      }
+    }
+
+    &[data-balloon-pos^="down"] {
+      &:before,
+      &:after {
+        top: 100%;
+        transform: translate(0, calc(var(--balloon-move) * -1));
+      }
+
+      &:after { margin-top: $balloon-arrow-size + 5px; }
+      &:before { @include arrow(up); }
+    }
+
+    &[data-balloon-pos="down"] {
+      &:after,
+      &:before {
+        left: 50%;
+        transform: translate(-50%, calc(var(--balloon-move) * -1));
+      }
+    }
+
+    &[data-balloon-pos="left"],
+    &[data-balloon-pos="right"] {
+      &:hover, &[data-balloon-visible] {
+        &:after { transform: translate(0, -50%); }
+        &:before { transform: translate(0, -50%); }
+      }
+    }
+
+    &[data-balloon-pos="left"] {
+      &:after,
+      &:before {
+        right: 100%;
+        top: 50%;
+        transform: translate(var(--balloon-move), -50%);
+      }
+
+      &:after { margin-right: $balloon-arrow-size + 5px; }
+      &:before { @include arrow(right); }
+    }
+
+    &[data-balloon-pos="right"] {
+      &:after,
+      &:before {
+        left: 100%;
+        top: 50%;
+        transform: translate(calc(var(--balloon-move) * -1), -50%);
+      }
+
+      &:after { margin-left: $balloon-arrow-size + 5px; }
+      &:before { @include arrow(left); }
+    }
+
+    &[data-balloon-length] {
+      &:after { white-space: normal; }
+    }
+
+    &[data-balloon-length="small"] {
+      &:after { width: 80px; }
+    }
+
+    &[data-balloon-length="medium"] {
+      &:after { width: 150px; }
+    }
+
+    &[data-balloon-length="large"] {
+      &:after { width: 260px; }
+    }
+
+    &[data-balloon-length="xlarge"] {
+      &:after {
+        width: 380px;
+
+        @media screen and (max-width: 768px) {
+          width: 90vw;
+        }
+      }
+    }
+
+    &[data-balloon-length="fit"] {
+      &:after { width: 100%; }
+    }
+  }
+}
