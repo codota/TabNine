@@ -2170,8 +2170,9 @@ Julia:
   codemirror_mime_type: text/x-julia
   language_id: 184
 Jupyter Notebook:
-  type: markup
-  ace_mode: json
+  type: programming
+  group: Python
+  ace_mode: python
   codemirror_mode: javascript
   codemirror_mime_type: application/json
   tm_scope: source.json
@@ -3603,6 +3604,7 @@ Python:
   - wscript
   interpreters:
   - python
+  - ipython
   - python2
   - python3
   aliases:
