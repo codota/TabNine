@@ -19,6 +19,12 @@
             "name": "Create JavaScript Debug Terminal",
             "request": "launch",
             "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "node-terminal",
+            "name": "Create JavaScript Debug Terminal",
+            "request": "launch",
+            "cwd": "${workspaceFolder}"
         }
     ]
 }
