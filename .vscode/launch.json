@@ -6,6 +6,14 @@
     "configurations": [
         
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open ReleaseNotes.html",
