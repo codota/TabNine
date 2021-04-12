@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "ms-ceintl.vscode-language-pack-zh-hant"
+        "ms-ceintl.vscode-language-pack-zh-hant",
+        "msjsdiag.debugger-for-chrome"
     ]
 }
