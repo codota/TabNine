@@ -1,10 +1,10 @@
 # Changelog
 
-## [Unreleased]() (2021-10-11)
+## [Unreleased]() (2021-10-13)
 
 ### Features
 
-* automate changelog update on public repo 69f92ab
+* empy line completions enabled for alpha (#1327) bac3824
 
 
 ### [v2.5.2-test5]() (2020-03-26)
