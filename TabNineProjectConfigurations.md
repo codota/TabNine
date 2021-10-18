@@ -19,11 +19,11 @@ project-root/
 ## .tabnine format
 The `.tabnine` file is formatted using `JSON` containing the following fields:
 
-### Fields
+
 
 | field                 | type       | default value (if not set)     | description                                                                                                                                                                                            | notes                                                                                                |
 |-----------------------|------------|--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| `teamLearningEnabled` | `boolean`  | `true`                         | relevant for users which are part of a team and want to disable team training on this project. `true` - team learning is enabled for this project  `false` team learning is disabled for this project  |                                                                                                      |
+| `disableTeamLearning` | `boolean`  | `false`                         | relevant for users which are part of a team and want to disable team training on this project. `true` - team learning is disabled for this project  `false` team learning is enabled for this project  |                                                                                                      |
 | `teamLearningIgnore`  | `[string]` | `[]` | an `Array` of `String` file path masks to ignore for team learning                                                                                                           | Entries are identical in format to those you would have as part of a `.gitignore` file |
 |                       |            |                                |                                                                                                                                                                                                        |                                                                                                      |
 
@@ -31,12 +31,12 @@ The `.tabnine` file is formatted using `JSON` containing the following fields:
 *ignore everything in my secrets and passwords files*
 ```
 {
-    "teamLearningEnabled": true,
-    "teamLearningIgnore" : ["secrets.txt", "passwords.txt"]
+    "disableTeamLearning": false,
+    "teamLearningIgnore" : ["myFile.txt", "someOtherFile.abc"]
 }
 ```
 *ignore everything under tests folder*
-(notice that `teamLearningEnabled` is implicitly `true` since field is omitted)
+(notice that `disableTeamLearning` is implicitly `false` since field is omitted)
 
 ```
 {
@@ -47,13 +47,13 @@ The `.tabnine` file is formatted using `JSON` containing the following fields:
 *don't collect data for this project*
 ```
 {
-    "teamLearningEnabled" : false
+    "disableTeamLearning" : true
 }
 ```
 **equivalent to a catch all mask**
 ```
 {
-    "teamLearningEnabled" : true,
+    "disableTeamLearning" : false,
     "teamLearningIgnore" : ["*"]
 
 }
