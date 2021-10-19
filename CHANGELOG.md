@@ -1,9 +1,6 @@
 # Changelog
 
-## Unreleased (2021-10-18)
-
-### Features
-
+## Unreleased (2021-10-19)
 
 ### v3.7.20 (2021-10-18)
 
