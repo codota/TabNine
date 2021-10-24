@@ -1,6 +1,18 @@
 # Changelog
 
-## Unreleased (2021-10-20)
+## Unreleased (2021-10-24)
+
+### v3.7.22 (2021-10-19)
+
+#### Features
+
+
+### v3.7.21 (2021-10-19)
+
+#### Fixes
+
+* hide teamai toggle for free teams (#1356)
+
 
 ### v3.7.20 (2021-10-18)
 
