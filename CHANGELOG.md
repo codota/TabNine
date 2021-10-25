@@ -1,8 +1,13 @@
 # Changelog
 
-## Unreleased (2021-10-24)
+## Unreleased (2021-10-25)
 
-### Fixes
+### Features
+
+
+### v3.7.23 (2021-10-24)
+
+#### Fixes
 
 
 ### v3.7.22 (2021-10-19)
