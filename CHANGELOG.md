@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased (2021-10-25)
+## Unreleased (2021-10-26)
 
 ### v3.7.25 (2021-10-25)
 
