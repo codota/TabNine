@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased (2021-10-26)
+## Unreleased (2021-10-27)
+
+### Features
+
+* Team Data Collection V2.0
+
 
 ### v3.7.25 (2021-10-25)
 
