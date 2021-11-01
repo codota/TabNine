@@ -2,12 +2,19 @@
 
 ## Unreleased (2021-11-01)
 
-### Features
+### v3.8.3 (2021-10-31)
+
+#### Features
+
+
+### v3.8.2 (2021-10-28)
+
+#### Features
 
 * Team Data Collection V2.0
 
 
-### Fixes
+#### Fixes
 
 
 ### v3.7.25 (2021-10-25)
