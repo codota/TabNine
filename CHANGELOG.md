@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased (2021-11-04)
+## Unreleased (2021-11-06)
 
 ### v3.8.7 (2021-11-04)
 
