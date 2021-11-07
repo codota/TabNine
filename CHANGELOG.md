@@ -2,6 +2,11 @@
 
 ## Unreleased (2021-11-07)
 
+### Fixes
+
+* Small bugs in team ai data collection
+
+
 ### v3.8.7 (2021-11-04)
 
 ### v3.8.6 (2021-11-02)
