@@ -1,8 +1,10 @@
 # Changelog
 
-## Unreleased (2021-11-07)
+## Unreleased (2021-11-08)
 
-### Fixes
+### v3.8.8 (2021-11-07)
+
+#### Fixes
 
 * Small bugs in team ai data collection
 
