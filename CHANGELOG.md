@@ -2,6 +2,14 @@
 
 ## Unreleased (2021-11-09)
 
+### Features
+
+* make empty line suggestions configurable in the hub (#1392)
+
+
+### Fixes
+
+
 ### v3.8.10 (2021-11-08)
 
 #### Features
