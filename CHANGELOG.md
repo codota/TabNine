@@ -9,6 +9,8 @@
 
 ### Fixes
 
+* fix team shown post logout
+
 
 ### v3.8.10 (2021-11-08)
 
