@@ -2,9 +2,16 @@
 
 ## Unreleased (2021-11-10)
 
-### Fixes
+### v3.8.10 (2021-11-08)
 
-* Fix crashes on windows, due to path handling
+#### Features
+
+
+### v3.8.9 (2021-11-08)
+
+### v3.8.8 (2021-11-07)
+
+#### Fixes
 
 * Small bugs in team ai data collection
 
