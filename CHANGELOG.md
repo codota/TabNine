@@ -2,6 +2,25 @@
 
 ## Unreleased (2021-11-10)
 
+### Fixes
+
+* fix team shown post logout (#1399)
+
+
+### v3.9.1 (2021-11-09)
+
+#### Features
+
+* adding user stats section in the hub
+
+* make empty line suggestions configurable in the hub (#1392)
+
+
+#### Fixes
+
+
+### v3.8.11 (2021-11-09)
+
 ### v3.8.10 (2021-11-08)
 
 #### Features
