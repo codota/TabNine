@@ -2,9 +2,9 @@
 
 ## Unreleased (2021-11-10)
 
-### Fixes
+### Features
 
-* fix team shown post logout (#1399)
+* present empty line completions for inline completions
 
 
 ### v3.9.1 (2021-11-09)
