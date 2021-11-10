@@ -4,7 +4,14 @@
 
 ### Features
 
-* present empty line completions for inline completions
+
+### v3.9.2 (2021-11-10)
+
+#### Fixes
+
+* Fix crashes on windows, due to path handling
+
+* fix team shown post logout (#1399)
 
 
 ### v3.9.1 (2021-11-09)
