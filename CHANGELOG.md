@@ -1,8 +1,12 @@
 # Changelog
 
-## Unreleased (2021-11-10)
+## Unreleased (2021-11-11)
+
+## v4.0.0 (2021-11-10)
 
 ### Features
+
+* present empty line completions for inline completions (#1412)
 
 
 ### v3.9.2 (2021-11-10)
