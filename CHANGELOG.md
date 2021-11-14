@@ -1,8 +1,16 @@
 # Changelog
 
-## Unreleased (2021-11-11)
+## Unreleased (2021-11-14)
 
 ### Fixes
+
+
+### v4.0.1 (2021-11-11)
+
+#### Features
+
+
+#### Fixes
 
 
 ## v4.0.0 (2021-11-10)
