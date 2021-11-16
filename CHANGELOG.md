@@ -1,44 +1,8 @@
 # Changelog
 
-## Unreleased (2021-11-16)
+## Unreleased (2021-11-10)
 
 ### Fixes
-
-
-### v4.0.5 (2021-11-16)
-
-### v4.0.4 (2021-11-14)
-
-#### Fixes
-
-
-### v4.0.3 (2021-11-14)
-
-### v4.0.2 (2021-11-14)
-
-#### Fixes
-
-
-### v4.0.1 (2021-11-11)
-
-#### Features
-
-
-#### Fixes
-
-
-## v4.0.0 (2021-11-10)
-
-### Features
-
-* present empty line completions for inline completions (#1412)
-
-
-### v3.9.2 (2021-11-10)
-
-#### Fixes
-
-* Fix crashes on windows, due to path handling
 
 * fix team shown post logout (#1399)
 
