@@ -1,8 +1,10 @@
 # Changelog
 
-## Unreleased (2021-11-22)
+## Unreleased (2021-11-23)
 
-### Fixes
+### v4.0.10 (2021-11-22)
+
+#### Fixes
 
 * do not return suggestion after numeric prefix
 
