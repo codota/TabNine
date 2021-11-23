@@ -2,9 +2,7 @@
 
 ## Unreleased (2021-11-23)
 
-### v4.0.10 (2021-11-22)
-
-#### Fixes
+### Fixes
 
 * do not return suggestion after numeric prefix
 
