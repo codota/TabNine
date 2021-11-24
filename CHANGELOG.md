@@ -2,12 +2,12 @@
 
 ## Unreleased (2021-11-24)
 
-### Features
-
-* promote empty line completions to beta
-
-
 ### Fixes
+
+
+### v4.0.11 (2021-11-24)
+
+#### Fixes
 
 
 ### v4.0.10 (2021-11-22)
