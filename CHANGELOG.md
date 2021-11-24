@@ -1,8 +1,18 @@
 # Changelog
 
-## Unreleased (2021-11-23)
+## Unreleased (2021-11-24)
+
+### Features
+
+* promote empty line completions to beta
+
 
 ### Fixes
+
+
+### v4.0.10 (2021-11-22)
+
+#### Fixes
 
 * do not return suggestion after numeric prefix
 
