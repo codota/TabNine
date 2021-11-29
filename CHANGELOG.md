@@ -2,26 +2,7 @@
 
 ## Unreleased (2021-11-29)
 
-### v4.0.12 (2021-11-25)
-
-#### Features
-
-* promote empty line completions to beta (#1452)
-
-
-#### Fixes
-
-
-### v4.0.11 (2021-11-24)
-
-#### Fixes
-
-
-### v4.0.10 (2021-11-22)
-
-#### Fixes
-
-* do not return suggestion after numeric prefix
+### Features
 
 
 ### v4.0.9 (2021-11-17)
