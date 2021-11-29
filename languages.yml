@@ -4689,6 +4689,8 @@ TypeScript:
   extensions:
   - ".ts"
   - ".tsx"
+  - ".mts"
+  - ".cts"
   tm_scope: source.ts
   ace_mode: typescript
   codemirror_mode: javascript
