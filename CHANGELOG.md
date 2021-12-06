@@ -2,6 +2,13 @@
 
 ## Unreleased (2021-12-06)
 
+### v4.0.23 (2021-12-06)
+
+#### Features
+
+* new hub ui fixes
+
+
 ### v4.0.22 (2021-12-05)
 
 #### Features
