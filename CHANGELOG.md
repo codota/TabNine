@@ -1,6 +1,13 @@
 # Changelog
 
-## Unreleased (2021-12-05)
+## Unreleased (2021-12-06)
+
+### v4.0.22 (2021-12-05)
+
+#### Features
+
+* new hub design rollout
+
 
 ### v4.0.20 (2021-12-02)
 
