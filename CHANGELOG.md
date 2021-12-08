@@ -2,10 +2,9 @@
 
 ## Unreleased (2021-12-08)
 
-### Features
-
-
 ### Fixes
+
+* update cloud server rust version to 1.57 and fix lints
 
 
 ### v4.0.23 (2021-12-06)
