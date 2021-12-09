@@ -1,8 +1,10 @@
 # Changelog
 
-## Unreleased (2021-12-08)
+## Unreleased (2021-12-09)
 
 ### Fixes
+
+* update cloud server rust version to 1.57 and fix lints (#1479)
 
 * update cloud server rust version to 1.57 and fix lints
 
