@@ -1,8 +1,12 @@
 # Changelog
 
-## Unreleased (2021-12-13)
+## Unreleased (2021-12-14)
 
-### Fixes
+### v4.0.30 (2021-12-13)
+
+#### Fixes
+
+* change snippets toggle visibility (#1489)
 
 
 ### v4.0.29 (2021-12-12)
