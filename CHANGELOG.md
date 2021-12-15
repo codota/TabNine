@@ -7,6 +7,9 @@
 * icon and logos changed for the holidays (#1492)
 
 
+### Fixes
+
+
 ### v4.0.30 (2021-12-13)
 
 #### Fixes
