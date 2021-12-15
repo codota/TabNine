@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased (2021-12-14)
+## Unreleased (2021-12-15)
+
+### Features
+
+* icon and logos changed for the holidays (#1492)
+
 
 ### v4.0.30 (2021-12-13)
 
