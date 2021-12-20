@@ -1,9 +1,6 @@
 # Changelog
 
-## Unreleased (2021-12-19)
-
-### Features
-
+## Unreleased (2021-12-20)
 
 ### v4.0.32 (2021-12-16)
 
