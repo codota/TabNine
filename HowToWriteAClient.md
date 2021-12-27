@@ -20,18 +20,18 @@ Find the TabNine binary in `binaries/<version>/<platform>`.
 Run TabNine in your terminal and paste the following command as input:
 
 ```
-{"version": "1.0.0", "request": {"Autocomplete": {"before": "Hello H", "after": "", "region_includes_beginning": true, "region_includes_end": true, "filename": null}}}
+{"version": "1.0.0", "request": {"Autocomplete": {"before": "Hello H", "after": "", "region_includes_beginning": true, "region_includes_end": true, "filename": null, "correlation_id": 1}}}
 ```
 You should see the following output:
 ```
-{"old_prefix":"H","results":[{"new_prefix":"Hello","old_suffix":"","new_suffix":""}],"user_message":[]}
+{"old_prefix":"H","results":[{"new_prefix":"Hello","old_suffix":"","new_suffix":""}],"user_message":[],"correlation_id":1}
 ```
 A few things to note:
 - The protocol is versioned. The protocol versions are the same as TabNine versions. To guarantee forward compatibility with future versions of TabNine, pass the current TabNine version (or any previous version) as the protocol version.
 - The completion position is specified by giving the strings before and after the cursor. If these strings are very long, you can truncate them. In this case you should set `region_includes_beginning` or `region_includes_end` to `false` to indicate that the strings do not extend to the beginning or end of the file, respectively.
 - The recommended threshold for truncation is 100 KB.
 - Autocomplete responses contain a field `user_message` which is a message that should be displayed to the user. For example, this is used to inform the user when a language server fails to start, or when TabNine hits the index size limit.
-
+- The `correlation_id` field can be passed as a verification token that will be returned in response.
 # Setting up TabNine within an editor plugin
 
 You must preserve the directory structure created by `dl_binaries.sh`, or else TabNine's automatic updating will not work.
@@ -139,12 +139,14 @@ AutocompleteArgs {
   filename: string | null,
   region_includes_beginning: bool,
   region_includes_end: bool,
-  max_num_results: int | null
+  max_num_results: int | null,
+  correlation_id: int | null,
 }
 ```
 
 `max_num_results` must be positive. More information about Autocomplete requests is in the "Getting Started" section.
 
+`correlation_id` field can be passed as a verification token that will be returned in response.
 ```
 PrefetchArgs {
   filename: string
@@ -163,7 +165,8 @@ This gives the regex used by TabNine to parse identifiers for the provided file.
 AutocompleteResponse {
   old_prefix: string,
   results: ResultEntry[],
-  user_message: string[]
+  user_message: string[],
+  correlation_id: int | null,
 }
 ```
 
