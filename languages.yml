@@ -243,8 +243,8 @@ ApacheConf:
   - ".vhost"
   filenames:
   - ".htaccess"
-  - apache2.conf
-  - httpd.conf
+  - "apache2.conf"
+  - "httpd.conf"
   tm_scope: source.apache-config
   ace_mode: apache_conf
   language_id: 16
