@@ -5,7 +5,6 @@ set -e
 
 version="$(curl -sS https://update.tabnine.com/bundles/version)"
 targets='i686-pc-windows-gnu
-    i686-unknown-linux-musl
     x86_64-apple-darwin
     aarch64-apple-darwin
     x86_64-pc-windows-gnu

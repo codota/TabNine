@@ -24,6 +24,13 @@ You may be interested in these TabNine clients written by **third parties**:
 - [Eclipse](https://github.com/GitPopcorn/tabnine-eclipse)
 - Your client https://github.com/codota/TabNine/blob/master/HowToWriteAClient.md
 
+# Supported Architectures
+- x86_64-unknown-linux-musl
+- x86_64-apple-darwin
+- aarch64-apple-darwin
+- i686-pc-windows-gnu
+- x86_64-pc-windows-gnu
+
 # Changelogs
 
 If new features don't work for you, check that you have the most recent version by typing `TabNine::version` into your text editor. If you don't have the most recent version, try restarting your editor.
