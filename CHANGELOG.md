@@ -1,9 +1,6 @@
 # Changelog
 
-## Unreleased (2022-01-04)
-
-
-### Features
+## Unreleased (2022-01-05)
 
 
 ### Fixes
