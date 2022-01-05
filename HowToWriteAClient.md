@@ -61,7 +61,6 @@ def get_tabnine_path(binary_dir):
         return os.path.join(binary_dir, *args)
 
     translation = {
-        ("linux", "x32"): "i686-unknown-linux-musl/TabNine",
         ("linux", "x64"): "x86_64-unknown-linux-musl/TabNine",
         ("osx", "x64"): "x86_64-apple-darwin/TabNine",
         ("osx", "arm64"): "aarch64-apple-darwin/TabNine",
