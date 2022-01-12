@@ -1,12 +1,15 @@
 # Changelog
 
-## Unreleased (2022-01-11)
+## Unreleased (2022-01-12)
 
 
 ### Features
 
 
-### Fixes
+### v4.0.51 (2022-01-12)
+
+
+#### Fixes
 
 
 ### v4.0.49 (2022-01-10)
