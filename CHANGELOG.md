@@ -5,29 +5,6 @@
 
 ### Features
 
-* support TabnineHub in tabnine-vim plugin
-
-
-### v4.0.60 (2022-01-18)
-
-
-#### Features
-
-
-#### Fixes
-
-
-### v4.0.59 (2022-01-17)
-
-
-### v4.0.56 (2022-01-16)
-
-
-#### Features
-
-
-#### Fixes
-
 
 ### v4.0.51 (2022-01-12)
 
