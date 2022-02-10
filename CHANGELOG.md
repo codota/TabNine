@@ -1,9 +1,73 @@
 # Changelog
 
-### v4.0.60 (2022-01-18)
+## Unreleased (2022-02-10)
+
+
+### v4.0.99993 (2022-02-10)
+
+
+### v4.0.99992 (2022-02-06)
+
+
+### v4.0.99991 (2022-02-06)
 
 
 #### Features
+
+
+#### Fixes
+
+
+### v4.0.99 (2022-01-27)
+
+
+#### Features
+
+* support TabnineHub in tabnine-vim plugin
+
+
+#### Fixes
+
+
+### v4.0.88 (2022-01-18)
+
+
+### v4.0.87 (2022-02-10)
+
+
+### v4.0.85 (2022-02-06)
+
+
+#### Features
+
+
+### v4.0.84 (2022-02-06)
+
+
+#### Features
+
+
+#### Fixes
+
+
+### v4.0.71 (2022-01-27)
+
+
+#### Features
+
+
+#### Fixes
+
+
+### v4.0.67 (2022-01-23)
+
+
+### v4.0.64 (2022-01-23)
+
+
+#### Features
+
+* support TabnineHub in tabnine-vim plugin
 
 
 #### Fixes
