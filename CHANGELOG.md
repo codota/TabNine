@@ -3,12 +3,30 @@
 ## Unreleased (2022-02-10)
 
 
-### Features
+### v4.0.99993 (2022-02-10)
+
+
+### v4.0.99992 (2022-02-06)
+
+
+### v4.0.99991 (2022-02-06)
+
+
+#### Features
+
+
+#### Fixes
+
+
+### v4.0.99 (2022-01-27)
+
+
+#### Features
 
 * support TabnineHub in tabnine-vim plugin
 
 
-### Fixes
+#### Fixes
 
 
 ### v4.0.88 (2022-01-18)
@@ -480,4 +498,52 @@
 
 
 ## v2.0.0 (2019-07-10)
+
+
+### v0.0.21 (2022-02-10)
+
+
+### v0.0.2 (2022-02-10)
+
+
+#### Features
+
+* support TabnineHub in tabnine-vim plugin
+
+* icon and logos changed for the holidays (#1492)
+
+* new hub to all users (#1483)
+
+* new hub ui fixes
+
+* new hub design rollout
+
+* promote empty line completions to beta (#1452)
+
+* present empty line completions for inline completions (#1412)
+
+* adding user stats section in the hub
+
+* make empty line suggestions configurable in the hub (#1392)
+
+* Team Data Collection V2.0
+
+
+#### Fixes
+
+* change snippets toggle visibility (#1489)
+
+* update cloud server rust version to 1.57 and fix lints (#1479)
+
+* Remove team_ai_local_collection option from global config
+
+* do not return suggestion after numeric prefix
+
+* Fix crashes on windows, due to path handling
+
+* fix team shown post logout (#1399)
+
+* Small bugs in team ai data collection
+
+* hide teamai toggle for free teams (#1356)
 
