@@ -3,15 +3,12 @@
 ## Unreleased (2022-02-15)
 
 
-### v4.0.89 (2022-02-14)
-
-
-#### Features
+### Features
 
 * support TabnineHub in tabnine-vim plugin
 
 
-#### Fixes
+### Fixes
 
 
 ### v4.0.88 (2022-01-18)
