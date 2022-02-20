@@ -1,9 +1,15 @@
 # Changelog
 
-## Unreleased (2022-02-17)
+## Unreleased (2022-02-20)
 
 
 ### Features
+
+
+### Fixes
+
+* remove pro restriction from "Disable suggestions on these files" preference
+toggle
 
 
 ### v4.1.1 (2022-02-16)
