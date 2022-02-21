@@ -3,6 +3,21 @@
 ## Unreleased (2022-02-21)
 
 
+### v4.1.3 (2022-02-20)
+
+
+#### Features
+
+
+#### Fixes
+
+* remove pro restriction from "Disable suggestions on these files" preference
+toggle (#1649)
+
+
+### v4.1.2 (2022-02-16)
+
+
 ### v4.1.1 (2022-02-16)
 
 
@@ -28,6 +43,21 @@
 
 
 ### v4.0.99991 (2022-02-06)
+
+
+### v4.0.105 (2022-02-21)
+
+
+#### Features
+
+
+#### Fixes
+
+* remove pro restriction from "Disable suggestions on these files" preference
+toggle (#1649)
+
+
+### v4.0.102 (2022-02-21)
 
 
 ### v4.0.100 (2022-02-17)
