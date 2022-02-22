@@ -1,11 +1,9 @@
 # Changelog
 
-## Unreleased (2022-02-21)
+## Unreleased (2022-02-22)
 
 
-### Features
-
-* Add display name for models
+### Fixes
 
 
 ### v4.1.3 (2022-02-20)
@@ -48,6 +46,9 @@ toggle (#1649)
 
 
 ### v4.0.99991 (2022-02-06)
+
+
+### v4.0.107 (2022-02-22)
 
 
 ### v4.0.105 (2022-02-21)
@@ -560,6 +561,20 @@ toggle (#1649)
 
 
 ## v2.0.0 (2019-07-10)
+
+
+### v0.0.229 (2022-02-21)
+
+
+#### Features
+
+* Add display name for models
+
+
+#### Fixes
+
+* remove pro restriction from "Disable suggestions on these files" preference
+toggle (#1649)
 
 
 ### v0.0.227 (2022-02-13)
