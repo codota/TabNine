@@ -1,45 +1,11 @@
 # Changelog
 
-## Unreleased (2022-02-22)
-
-
-### Fixes
-
-
-### v4.1.4 (2022-02-21)
-
-
-### v4.1.3 (2022-02-20)
-
-
-#### Features
-
-
-#### Fixes
-
-* remove pro restriction from "Disable suggestions on these files" preference
-toggle (#1649)
-
-
-### v4.1.2 (2022-02-16)
-
-
-### v4.1.1 (2022-02-16)
-
-
-#### Features
-
-
-## v4.1.0 (2022-02-16)
+## Unreleased (2022-02-23)
 
 
 ### Features
 
-
-### Fixes
-
-
-### v4.0.99999 (2022-01-30)
+* use tokens scores to return partial completions
 
 
 ### v4.0.99993 (2022-02-10)
@@ -49,6 +15,9 @@ toggle (#1649)
 
 
 ### v4.0.99991 (2022-02-06)
+
+
+### v4.0.111 (2022-02-23)
 
 
 ### v4.0.107 (2022-02-22)
