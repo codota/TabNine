@@ -1,9 +1,21 @@
 # Changelog
 
-## Unreleased (2022-03-01)
+## Unreleased (2022-03-02)
 
 
 ### Features
+
+
+### v4.1.10 (2022-03-02)
+
+
+#### Features
+
+
+### v4.1.9 (2022-03-01)
+
+
+#### Features
 
 
 ### v4.1.6 (2022-02-24)
@@ -26,7 +38,7 @@
 
 #### Fixes
 
-* remove pro restriction from "Disable suggestions on these files" preference
+    * remove pro restriction from "Disable suggestions on these files" preference
 toggle (#1649)
 
 
@@ -58,6 +70,24 @@ toggle (#1649)
 
 
 ### v4.0.99991 (2022-02-06)
+
+
+### v4.0.120 (2022-03-02)
+
+
+#### Features
+
+
+#### Fixes
+
+
+### v4.0.119 (2022-03-01)
+
+
+#### Features
+
+
+#### Fixes
 
 
 ### v4.0.117 (2022-03-01)
@@ -101,7 +131,7 @@ toggle (#1649)
 
 #### Fixes
 
-* remove pro restriction from "Disable suggestions on these files" preference
+    * remove pro restriction from "Disable suggestions on these files" preference
 toggle (#1649)
 
 
@@ -128,7 +158,7 @@ toggle (#1649)
 
 #### Features
 
-* support TabnineHub in tabnine-vim plugin
+    * support TabnineHub in tabnine-vim plugin
 
 
 #### Fixes
@@ -172,7 +202,7 @@ toggle (#1649)
 
 #### Features
 
-* support TabnineHub in tabnine-vim plugin
+    * support TabnineHub in tabnine-vim plugin
 
 
 #### Fixes
@@ -291,7 +321,7 @@ toggle (#1649)
 
 #### Features
 
-* icon and logos changed for the holidays (#1492)
+    * icon and logos changed for the holidays (#1492)
 
 
 #### Fixes
@@ -302,7 +332,7 @@ toggle (#1649)
 
 #### Fixes
 
-* change snippets toggle visibility (#1489)
+    * change snippets toggle visibility (#1489)
 
 
 ### v4.0.29 (2021-12-12)
@@ -310,7 +340,7 @@ toggle (#1649)
 
 #### Features
 
-* new hub to all users (#1483)
+    * new hub to all users (#1483)
 
 
 ### v4.0.27 (2021-12-09)
@@ -330,7 +360,7 @@ toggle (#1649)
 
 #### Fixes
 
-* update cloud server rust version to 1.57 and fix lints (#1479)
+    * update cloud server rust version to 1.57 and fix lints (#1479)
 
 
 ### v4.0.24 (2021-12-08)
@@ -347,7 +377,7 @@ toggle (#1649)
 
 #### Features
 
-* new hub ui fixes
+    * new hub ui fixes
 
 
 ### v4.0.22 (2021-12-05)
@@ -355,7 +385,7 @@ toggle (#1649)
 
 #### Features
 
-* new hub design rollout
+    * new hub design rollout
 
 
 ### v4.0.20 (2021-12-02)
@@ -387,7 +417,7 @@ toggle (#1649)
 
 #### Fixes
 
-* Remove team_ai_local_collection option from global config
+    * Remove team_ai_local_collection option from global config
 
 
 ### v4.0.12 (2021-11-25)
@@ -395,7 +425,7 @@ toggle (#1649)
 
 #### Features
 
-* promote empty line completions to beta (#1452)
+    * promote empty line completions to beta (#1452)
 
 
 #### Fixes
@@ -412,7 +442,7 @@ toggle (#1649)
 
 #### Fixes
 
-* do not return suggestion after numeric prefix
+    * do not return suggestion after numeric prefix
 
 
 ### v4.0.9 (2021-11-17)
@@ -471,7 +501,7 @@ toggle (#1649)
 
 ### Features
 
-* present empty line completions for inline completions (#1412)
+    * present empty line completions for inline completions (#1412)
 
 
 ### v3.9.2 (2021-11-10)
@@ -479,9 +509,9 @@ toggle (#1649)
 
 #### Fixes
 
-* Fix crashes on windows, due to path handling
+    * Fix crashes on windows, due to path handling
 
-* fix team shown post logout (#1399)
+    * fix team shown post logout (#1399)
 
 
 ### v3.9.1 (2021-11-09)
@@ -489,9 +519,9 @@ toggle (#1649)
 
 #### Features
 
-* adding user stats section in the hub
+    * adding user stats section in the hub
 
-* make empty line suggestions configurable in the hub (#1392)
+    * make empty line suggestions configurable in the hub (#1392)
 
 
 #### Fixes
@@ -514,7 +544,7 @@ toggle (#1649)
 
 #### Fixes
 
-* Small bugs in team ai data collection
+    * Small bugs in team ai data collection
 
 
 ### v3.8.7 (2021-11-04)
@@ -543,7 +573,7 @@ toggle (#1649)
 
 #### Features
 
-* Team Data Collection V2.0
+    * Team Data Collection V2.0
 
 
 #### Fixes
@@ -575,7 +605,7 @@ toggle (#1649)
 
 #### Fixes
 
-* hide teamai toggle for free teams (#1356)
+    * hide teamai toggle for free teams (#1356)
 
 
 ### v3.7.20 (2021-10-18)
@@ -610,12 +640,12 @@ toggle (#1649)
 
 #### Features
 
-* Add display name for models
+    * Add display name for models
 
 
 #### Fixes
 
-* remove pro restriction from "Disable suggestions on these files" preference
+    * remove pro restriction from "Disable suggestions on these files" preference
 toggle (#1649)
 
 
@@ -630,42 +660,42 @@ toggle (#1649)
 
 #### Features
 
-* support TabnineHub in tabnine-vim plugin
+    * support TabnineHub in tabnine-vim plugin
 
-* icon and logos changed for the holidays (#1492)
+    * icon and logos changed for the holidays (#1492)
 
-* new hub to all users (#1483)
+    * new hub to all users (#1483)
 
-* new hub ui fixes
+    * new hub ui fixes
 
-* new hub design rollout
+    * new hub design rollout
 
-* promote empty line completions to beta (#1452)
+    * promote empty line completions to beta (#1452)
 
-* present empty line completions for inline completions (#1412)
+    * present empty line completions for inline completions (#1412)
 
-* adding user stats section in the hub
+    * adding user stats section in the hub
 
-* make empty line suggestions configurable in the hub (#1392)
+    * make empty line suggestions configurable in the hub (#1392)
 
-* Team Data Collection V2.0
+    * Team Data Collection V2.0
 
 
 #### Fixes
 
-* change snippets toggle visibility (#1489)
+    * change snippets toggle visibility (#1489)
 
-* update cloud server rust version to 1.57 and fix lints (#1479)
+    * update cloud server rust version to 1.57 and fix lints (#1479)
 
-* Remove team_ai_local_collection option from global config
+    * Remove team_ai_local_collection option from global config
 
-* do not return suggestion after numeric prefix
+    * do not return suggestion after numeric prefix
 
-* Fix crashes on windows, due to path handling
+    * Fix crashes on windows, due to path handling
 
-* fix team shown post logout (#1399)
+    * fix team shown post logout (#1399)
 
-* Small bugs in team ai data collection
+    * Small bugs in team ai data collection
 
-* hide teamai toggle for free teams (#1356)
+    * hide teamai toggle for free teams (#1356)
 
