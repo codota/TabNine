@@ -3,12 +3,18 @@
 ## Unreleased (2022-03-09)
 
 
-### Features
+### Fixes
+
+
+### v4.1.16 (2022-03-09)
+
+
+#### Features
 
     * add beta badge to the hub (#1678)
 
 
-### Fixes
+#### Fixes
 
 
 ### v4.1.15 (2022-03-06)
