@@ -1,9 +1,9 @@
 # Changelog
 
-## Unreleased (2022-03-14)
+## Unreleased (2022-03-15)
 
 
-### Fixes
+### Features
 
 
 ### v4.1.18 (2022-03-14)
