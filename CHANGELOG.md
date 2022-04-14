@@ -1,12 +1,15 @@
 # Changelog
 
-## Unreleased (2022-04-13)
+## Unreleased (2022-04-14)
 
 
-### Features
+### v4.4.1 (2022-04-13)
 
 
-### Fixes
+#### Features
+
+
+#### Fixes
 
 
 ## v4.4.0 (2022-04-13)
