@@ -27,6 +27,9 @@
     "lsp_id": "tex" 
   },
   "Clojure": { "lsp_id": "clojure" },
+  "COBOL": {
+    "add_identifier_chars": "-"
+  },
   "CoffeeScript":  { "lsp_id": "coffeescript" },
   "C/C++": { "lsp_id": "cpp" },
   "C#":  { "lsp_id": "csharp" },
