@@ -3656,6 +3656,7 @@ R:
   - splus
   extensions:
   - ".r"
+  - ".R"
   - ".rd"
   - ".rsx"
   filenames:
