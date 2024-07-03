@@ -5397,3 +5397,11 @@ Apex:
   codemirror_mode: clike
   codemirror_mime_type: text/x-java
   language_id: 17
+Prisma:
+  type: data
+  color: "#0c344b"
+  extensions:
+    - ".prisma"
+  tm_scope: source.prisma
+  ace_mode: text
+  language_id: 499933428
