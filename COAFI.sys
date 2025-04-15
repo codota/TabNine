@@ -1,0 +1,89 @@
+Below is a comprehensive explanation of what’s happening and several suggestions on how to move forward.
+
+---
+
+## What’s Happening
+
+The error you’re seeing is:
+
+```
+com.intellij.diagnostic.PluginException: ActionUpdateThread.OLD_EDT is deprecated and going to be removed soon. 'FixCodeAction' must override getActionUpdateThread() and choose EDT or BGT. See ActionUpdateThread javadoc. [Plugin: com.tabnine.TabNine]
+```
+
+This indicates that the TabNine plugin is using an outdated API in one of its actions (likely in the class called `FixCodeAction`). Specifically, IntelliJ IDEA now requires plugin actions to explicitly define on which thread their update methods run by overriding the new method `getActionUpdateThread()` (instead of relying on the old default value, `ActionUpdateThread.OLD_EDT`, which is now deprecated).
+
+---
+
+## Why This Error Occurs
+
+- **Deprecated API Usage:**  
+  The IntelliJ Platform has updated its threading model for actions. The previous default value (`OLD_EDT`) is going to be removed soon.  
+- **Required Override:**  
+  To avoid this deprecation and potential runtime problems, every action (or subclass of `AnAction`) that does not already override `getActionUpdateThread()` must now do so explicitly—choosing whether its updates should occur on the EDT (Event Dispatch Thread) or on a background thread (BGT).
+
+In your case, the TabNine plugin (version 1.209.0) still hasn’t updated the affected action (`FixCodeAction`), which causes IntelliJ IDEA to complain.
+
+---
+
+## How to Fix It
+
+### 1. **If You’re a TabNine Maintainer or Can Patch the Plugin**
+
+Locate the implementation of `FixCodeAction` (or any other action causing the issue) and add an override like this:
+
+```java
+import com.intellij.openapi.actionSystem.ActionUpdateThread;
+import com.intellij.openapi.actionSystem.AnActionEvent;
+import org.jetbrains.annotations.NotNull;
+
+// Inside your FixCodeAction class
+@Override
+public @NotNull ActionUpdateThread getActionUpdateThread() {
+    // Return EDT (most common for UI actions) or BGT if the update is expensive.
+    return ActionUpdateThread.EDT;
+}
+```
+
+Make sure that all actions in the plugin now explicitly override this method. Consult the [ActionUpdateThread documentation](https://www.jetbrains.org/intellij/sdk/docs/user_guide/working_with_actions/action_update_thread.html) for additional guidance on choosing between EDT (for quick UI updates) and BGT (for longer-running computations).
+
+### 2. **If You’re an End-User**
+
+Since TabNine is a third-party plugin that you likely do not control directly:
+- **Check for Updates:**  
+  The plugin authors may already have a fix in a later version. Keep an eye on the plugin updates, or check the [TabNine issue tracker or release notes](https://www.tabnine.com/) for hints.
+- **Report the Issue:**  
+  If no update is available, consider reporting or commenting on the existing GitHub/Zendesk issue (ticket #39920) to ensure that the maintainers are aware of the impact of the new IntelliJ IDEA version.
+
+### 3. **Workarounds**
+
+- **Downgrading IntelliJ IDEA:**  
+  Although not ideal in the long term, if the plugin functions correctly otherwise, you might use an older IntelliJ IDEA version that still supports `OLD_EDT` until an official fix is released.
+- **Temporary Disabling:**  
+  If the exception causes usability issues, temporarily disable the plugin until the maintainers push an update that addresses this deprecation.
+
+---
+
+## A Note on the Code Snippet Provided
+
+The code snippet (from the `CodeCompletionService`) you shared includes a comment indicating that there’s been at least one attempt to work around a related issue with concurrency in cache cleaning:
+
+```ts
+// Avoid concurrent cleanups - fixes TabNine issue IntelliJ IDEA is giving ... #678
+if (this.isCleaningUp && !force) {
+  return;
+}
+```
+
+This comment is unrelated to the deprecation error mentioned above—it’s more about preventing concurrent cache cleanup—and shows that the team is aware of prior issues. The main action needed, however, is in the UI action classes (like `FixCodeAction`), which must override the new `getActionUpdateThread()` method.
+
+---
+
+## Can We Help?
+
+Let me know if you’d like further assistance in any of these areas:
+
+- **Providing a patch or PR template** that you could forward to the TabNine team.
+- **Exploring alternative workarounds** (for instance, trying to override the problematic action via an IntelliJ IDEA “patch” if you’re comfortable with that level of customization).
+- **Further debugging or integration help** if you have more details or if additional errors arise.
+
+I hope this helps clarify what’s going wrong and how to address it. Let me know if you need further assistance or more detailed code examples!
