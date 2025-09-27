@@ -61,6 +61,10 @@
     "disable_pairing_for": ["'"]
   },
   "ShaderLab": { "lsp_id": "shaderlab" },
+  "COBOL": {
+  "identifier_regex": "[A-Z0-9-]+"
+},
+
   "SQL": { "lsp_id": "sql" },
   "Swift": { "lsp_id": "swift" },
   "TypeScript":  { "lsp_id": "typescript" },
