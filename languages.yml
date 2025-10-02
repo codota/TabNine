@@ -3587,6 +3587,8 @@ Python:
   - ".pyp"
   - ".pyt"
   - ".pyw"
+  - ".pyz"
+  - ".pyzw"
   - ".rpy"
   - ".spec"
   - ".tac"
